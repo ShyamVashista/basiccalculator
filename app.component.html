@@ -1,0 +1,18 @@
+
+<input type="number" [(ngModel)]="dto.value1" />
+
+<span>{{dto.operator}} </span>
+
+<input type="number" [(ngModel)]="dto.value2" />
+
+<span>=</span>
+
+<span>{{dto.cal}} </span>
+
+<!--<span>{{(dto.value1) (dto.operator) (dto.value2)}} </span>-->
+<br />
+<br />
+<br />
+<span>
+  <a (click)="calculation('+')">add</a> | <a (click)="calculation('-')">sub</a> | <a (click)="calculation('*')">multi</a> | <a (click)="calculation('/')">divide</a> | <a (click)="calculation(' ')">clear</a>
+</span>
